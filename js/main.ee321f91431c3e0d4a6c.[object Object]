@@ -1,0 +1,209 @@
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ 353:
+/***/ ((module) => {
+
+// Module
+var code = "<html lang=\"en\"> <head> <meta charset=\"utf-8\"> <title>Calendar</title> <meta name=\"description\" content=\"The HTML5 Herald\"> <meta name=\"author\" content=\"SitePoint\"> <link rel=\"stylesheet\" href=\"/src/sass/main.scss\"> </head> <body> <script src=\"/src/js/main.js\"></script> <div class=\"container\"> <form id=\"new_event\"> <div class=\"item\"> <label>Name of the event:</label> <div class=\"buttons\"><input type=\"text\" id=\"event_name\"/></div> </div> <div class=\"item\"> <label>Participants:</label> <div class=\"buttons\"> <select name=\"participants\" id=\"members\"> <option value=\"All\">Maria, Bob, Alex</option> <option value=\"Maria\">Maria</option> <option value=\"Bob\">Bob</option> <option value=\"Alex\">Alex</option> </select> </div> </div> <div class=\"item\"> <label>Day:</label> <div class=\"buttons\"> <select name=\"days\" id=\"days\"> <option value=\"Monday\">Monday</option> <option value=\"Tuesday\">Tuesday</option> <option value=\"Wednesday\">Wednesday</option> <option value=\"Thursday\">Thursday</option> <option value=\"Friday\">Friday</option> </select> </div> </div> <div class=\"item\"> <label>Time:</label> <div class=\"buttons\"> <select name=\"time\" id=\"time\"> <option value=\"10:00\">10:00</option> <option value=\"11:00\">11:00</option> <option value=\"12:00\">12:00</option> <option value=\"13:00\">13:00</option> <option value=\"14:00\">14:00</option> <option value=\"15:00\">15:00</option> <option value=\"16:00\">16:00</option> <option value=\"17:00\">17:00</option> <option value=\"18:00\">18:00</option> </select> </div> </div> <div class=\"buttons form\"> <button type=\"reset\" onclick=\"newEvent()\">Cancel</button> <button type=\"reset\" onclick=\"getData()\">Create</button> </div> </form> <div id=\"schedule\" class=\"calendar\"> <div class=\"title\"> <h2>Calendar</h2> <div class=\"buttons\"> <select name=\"team\" id=\"members_pick\" onclick=\"onSelect()\"> <option value=\"All\">All members</option> <option value=\"Maria\">Maria</option> <option value=\"Bob\">Bob</option> <option value=\"Alex\">Alex</option> </select> <button id=\"event_button\" type=\"button\" onclick=\"newEvent()\"> New event + </button> </div> </div> <div class=\"grid\"> <table> <tbody> <tr> <th>Name</th> <th>Mon</th> <th>Tue</th> <th>Wed</th> <th>Thu</th> <th>Fri</th> </tr> <tr id=\"10:00\"> <td>10:00</td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr> <tr id=\"11:00\"> <td>11:00</td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr> <tr id=\"12:00\"> <td>12:00</td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr> <tr id=\"13:00\"> <td>13:00</td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr> <tr id=\"14:00\"> <td>14:00</td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr> <tr id=\"15:00\"> <td>15:00</td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr> <tr id=\"16:00\"> <td>16:00</td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr> <tr id=\"17:00\"> <td>17:00</td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr> <tr id=\"18:00\"> <td>18:00</td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr> </tbody> </table> </div> </div> </div> </body> </html>";
+// Exports
+module.exports = code;
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		if(__webpack_module_cache__[moduleId]) {
+/******/ 			return __webpack_module_cache__[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+(() => {
+"use strict";
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(353);
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
+
+
+
+class eventClass {
+    constructor(event_name, member_name, event_day, event_time, event_id) {
+        this.event_name = event_name;
+        this.member_name = member_name;
+        this.event_day = event_day;
+        this.event_time = event_time;
+        this.event_id = event_id;
+    }
+}
+
+var counter = -1;
+var arr = []
+var check = false;
+
+window.newEvent = function () {
+    let el = document.getElementById("new_event");
+    let cal = document.getElementById("schedule");
+
+    if (el.style.display == "none") {
+        el.style.display = "flex";
+        cal.style.display = "none";
+    } else {
+        el.style.display = "none";
+        cal.style.display = "block"
+    }
+}
+
+window.onSelect = function () {
+    let member_choose = document.getElementById("members_pick").value;
+    if (member_choose !== "All") {
+        let new_arr = arr.filter(item => { return item.member_name !== member_choose })
+        let needed_arr = arr.filter(item => { return item.member_name == member_choose })
+        console.log(new_arr)
+        for (let i = 0; i < new_arr.length; i++) {
+            let el = document.getElementById(`cell_id_${new_arr[i].event_id}`);
+            el.style.visibility = "hidden"
+            el.parentNode.style.color = "white"
+            el.parentNode.style.backgroundColor = "white"
+        }
+        for (let i = 0; i < needed_arr.length; i++) {
+            let el = document.getElementById(`cell_id_${needed_arr[i].event_id}`);
+            el.style.visibility = "visible"
+            el.parentNode.style.color = "black"
+            el.parentNode.style.backgroundColor = "#d9f3bb"
+        }
+    } else {
+        console.log(arr)
+        for (let i = 0; i < arr.length; i++) {
+            let el = document.getElementById(`cell_id_${arr[i].event_id}`);
+            el.style.visibility = "visible"
+            el.parentNode.style.color = "black"
+            el.parentNode.style.backgroundColor = "#d9f3bb"
+            el.parentNode.parentNode.border = "2px solid #c4c4c4"
+        }
+    }
+}
+
+window.deleteCell = function (id) {
+    let el = document.getElementById(`cell_id_${id}`);
+    let event_name = el.getAttribute("name");
+    if (confirm(`Are you sure you want to delete "${event_name}" event?`)) {
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i].event_id, id)
+            if (arr[i].event_id == id) {
+                arr.splice(i, 1);
+                el.parentNode.style.backgroundColor = "#fff";
+                el.parentNode.outerHTML = "<td></td>";
+            }
+        }
+    }
+}
+
+window.getData = function () {
+    const days_map = new Map();
+    days_map.set("Monday", 1);
+    days_map.set("Tuesday", 2);
+    days_map.set("Wednesday", 3);
+    days_map.set("Thursday", 4);
+    days_map.set("Friday", 5);
+
+    console.log();
+
+    let get_event_name = document.getElementById("event_name").value;
+    let get_members = document.getElementById("members").value;
+    let get_days = document.getElementById("days").value;
+    let get_time = document.getElementById("time").value;
+
+    let get_row = document.getElementById(get_time);
+    let cell_number = days_map.get(get_days);
+
+    counter++;
+    console.log(counter)
+    let created_event = new eventClass(get_event_name, get_members, get_days, get_time, counter);
+
+    if (arr.length == 0) {
+        arr.push(created_event);
+        get_row.children[cell_number].style.backgroundColor = "#d9f3bb";
+        get_row.children[cell_number].innerHTML =
+            get_event_name +
+            `<span class="close" name="${get_event_name}" id="cell_id_${counter}" onclick="deleteCell(${counter})">x</span>`;
+        newEvent();
+    }
+    else {
+
+        check = false;
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i].event_day == created_event.event_day && arr[i].event_time == created_event.event_time) {
+                alert("cant create, the event on this is already booked");
+                newEvent();
+                check = true;
+                break;
+            }
+        }
+
+        console.log(check)
+        if (check != true) {
+            console.log("we are in else");
+            arr.push(created_event);
+            get_row.children[cell_number].style.backgroundColor = "#d9f3bb";
+            get_row.children[cell_number].innerHTML =
+                get_event_name +
+                `<span class="close" name="${get_event_name}" id="cell_id_${counter}" onclick="deleteCell(${counter})">x</span>`;
+
+            newEvent();
+        }
+    }
+
+}
+})();
+
+/******/ })()
+;

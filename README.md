@@ -1,6 +1,6 @@
-# Project Title
+# Calendar (Internship app)
 
-One Paragraph of project description goes here
+This is a javascript application that based on webpack environment  
 
 ## Getting Started
 

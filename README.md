@@ -1,10 +1,12 @@
-# Calendar (Internship app)
+# Calendar
 
-This is a javascript application that based on webpack environment  
+This is a javascript application that based on webpack environment.
 
-## Getting Started
+## Basic info
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This is the Ciklum internship task.
+App consists of 2 screens, the scheduler and form.
+The scheduler is made for team, so every person can create a meeting, choose day,time and see current meeting for other people
 
 ### Prerequisites
 

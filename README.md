@@ -84,10 +84,9 @@ npm run start
 
 ## Demo 
 
-```
-https://edw1x.github.io/Ciklum-Internship/
 
-```
+* [Demo](https://edw1x.github.io/Ciklum-Internship/)
+
 
 ## Built With
 

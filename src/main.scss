@@ -1,0 +1,130 @@
+@mixin flex-display($justify-content: center, $align-items: center, $lex-direction: row) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $lex-direction;
+}
+
+@mixin width-height($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin table-child() {
+    padding: 1.2%;
+    width: 16.6%;
+    border: 2px solid #c4c4c4;
+}
+
+@mixin buttons-template($padding-width, $padding-height) {
+    text-align: center;
+    font-size: 1em;
+    padding: $padding-width $padding-height;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.container {
+    @include flex-display(center, center);
+    @include width-height(100vw, 100vh);
+
+    background-color: white;
+}
+
+.calendar {
+    @include flex-display(flex-start, stretch, column);
+    @include width-height(70%, 80%);
+}
+
+.title {
+    @include flex-display(space-between, center);
+    @include width-height(100%, 15%);
+}
+
+.grid {
+    @include width-height(100%, 85%);
+}
+
+.buttons {
+    select {
+        @include buttons-template(10px, 30px);
+    }
+
+    button {
+        @include buttons-template(10px, 30px);
+
+        margin: 0 10px;
+        background-color: #e5e5e5;
+    }
+
+    input {
+        @include buttons-template(10px, 5px);
+
+        margin: 0 10px;
+    }
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+        @include table-child();
+
+        background-color: #e5e5e5;
+        font-weight: 900;
+    }
+
+    td {
+        @include table-child();
+
+        &:first-child {
+            font-weight: 600;
+        }
+    }
+}
+
+form {
+    @include width-height(45%, 45%);
+
+    z-index: 10;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    padding: 30px 30px;
+    border: 2px solid #c4c4c4;
+    background-color: white;
+}
+
+.item {
+    @include flex-display(space-between, center);
+    @include width-height(60%, 25%);
+
+    margin: 10px 0;
+}
+
+.form {
+    @include flex-display(flex-end, center);
+}
+
+.close {
+    position: absolute;
+    float: right;
+    margin: 0 10px;
+    color: #83966f;
+    cursor: pointer;
+}
